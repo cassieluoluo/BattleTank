@@ -1,0 +1,35 @@
+You can also read the online manual in my website.
+http://chobi-glass.com/Physics_Tank_Maker_manual/index.html
+
+
+"How to use Sample Tank" (Ver.2.3)
+
+Please feel free to contact me if you have any questions.
+shopmaster@chobi-glass.com
+http://chobi-glass.com/Unity/index.html
+
+
+You can find finished tank prefabs in "Resources" >> "Sample_Tank_##" folder.
+
+
+(1) Drag and drop the prefab into the Hierarchy window.
+
+(2) Select the top object of the tank in the Hierarchy window.
+
+(3) Choose the "Tank ID" differing from other tanks in the Inspector window.
+     
+    (Notice.)
+    At least one of the tanks must have ID [ 1 ] in the scene, otherwise you will get errors in PlayMode.
+
+(4) Choose the "Relationship".
+    Choose the relationship with other tanks.
+     
+
+(5) Adjust the position as you will.
+    Make sure that the top object is selected, and move the position as you will.
+     
+
+(6) Now you are ready to play.
+    Please read also "How to use AI Tank".
+
+

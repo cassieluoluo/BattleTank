@@ -1,0 +1,123 @@
+You can also read the online manual in my website.
+http://chobi-glass.com/Physics_Tank_Maker_manual/index.html
+
+
+"How to update" (Ver.2.3)
+
+Please feel free to contact me if you have any questions.
+shopmaster@chobi-glass.com
+http://chobi-glass.com/Unity/index.html
+
+(Notice.)
+Please backup your project before importing the update.
+Most of the files will be overwritten. 
+
+
++++ How to update old Tank (from Version 2.2 to 2.3) +++
+
+(1) Adjust the "Engine_Sound" settings.
+    When your tank has "Physics Track", you need to adjust the "Engine_Sound".
+    Select the "Engine_Sound" in the tank.
+     
+
+    And set the "Track Type" according to the type of the track attached to this tank.
+     
+
+
+(2) Adjust the "SwingBalls" settings.
+    The behavior of "SwingBall" has been changed in version 2.3.
+    Adjust the settings of the "Create_SwingBall" if you need.
+    Please read "How to attach 'SwingBall'" and "Create_SwingBall".
+
+
+
++++ How to update old Tank (from Version 2.1 to 2.3) +++
+
+(1) Set up the Curve for recoil-brake.
+    The motion settings for recoil-brake had been changed in version 2.2.
+    You need to set up the Curve for the motion of the recoil-brake.
+
+    Select the "Barrel_Base" in the tank.
+     
+
+    And click the "Motion" in the "Reciol_Brake_CS(Script)".
+     
+
+    The curve editor will appear. Set up the Curve as following image.
+    
+    About how to edit the Curve, please refer to the following official manual.
+    https://docs.unity3d.com/Manual/EditingCurves.html
+    
+
+(2) Attach Semi-Automatic component if you need.
+    Semi-Automatic operation method had been added in version 2.2.
+    If you need it, attach the component into your tank.
+
+    You can find the prefab "AI_Semi_Core" in the 'Template' folder.
+    Drag and drop it into the MainBody of your tank in the Hierarchy window.
+     
+
+    And make sure that the "AI_Semi_Core" is place under the MainBody as its child.
+     
+
+    Next, select the top object of the tank, and change the "Input Device Type" to "Semi Automatic".
+     
+
+    Now, test yout tank in PlayMode.
+    About the operation method, please read "How to operate".
+     
+
+
+(3) Adjust the "Engine_Sound" settings.
+    When your tank has "Physics Track", you need to adjust the "Engine_Sound".
+    Select the "Engine_Sound" in the tank.
+     
+
+    And set the "Track Type" according to the type of the track attached to this tank.
+     
+
+
+(4) Update the "CreateSteered_Wheel". 
+    When your tank has "CreateSteered_Wheel" such as "Sdkfz251", press the "Update Value" button in it.
+       
+
+
+(5) Adjust AI Tank settings.
+    The behavior of AI had been changed in version 2.2.
+    The new AI uses both brake-turn and pivot-turn properly. So the tank requires enough braking force to turn a corner.
+    When your AI tank cannot smoothly turn a corner, try the following steps.
+
+    Select the MainBody in your AI tank.
+     
+
+    And increase the "Turn Brake Drag" value in the "Drive_Control_CS (script)".
+     
+
+
+    Also you can adjust the angle that the AI switches pivot-turn from brake-turn, and the speed rate while turning.
+    Select the  "AI_Core" in the tank.
+     
+
+    And adjust the "Pivot Turn Angle" and "Min Speed Rate".
+     
+    [Pivot Turn Angle]
+    The tank does pivot-turn (swivel turning) when the angle to the next corner is greater than this value.
+    (Notice.)
+    When your AI tank has trouble turning a tight corner, try to reduce this value.
+
+    [Min Speed Rate]
+    AI decreases the tank speed while turning by referring to this value.
+    (Notice.)
+    When your AI tank has trouble turning a tight corner, try to reduce this value.
+
+    For more information about AI settings, please read "AI System".
+
+
+(6) Adjust the "SwingBalls" settings.
+    The behavior of "SwingBall" has been changed in version 2.3.
+    Adjust the settings of the "Create_SwingBall" if you need.
+    Please read "How to attach 'SwingBall'" and "Create_SwingBall".
+
+
+
+

@@ -1,0 +1,90 @@
+You can also read the online manual in my website.
+http://chobi-glass.com/Physics_Tank_Maker_manual/index.html
+
+
+"FAQ" (Ver.2.3)
+
+Q. "Physics Track" has broken at the opening.
+
+A1. Use "Wheel Resize Script" option.
+    When the wheels are too small, the track pieces often go through them at the opening.
+    Select the "Create_###Wheel" and enable the "Wheel Resize Script" option. And set the "Scale Size" to greater than 1.
+    When the wheels are too big and they protrude from the track, set the "Scale Size" to smaller than 1.
+    The wheels are resized to the specified scale at the opening. And they return gently to the original size.
+    
+    
+
+A2. Use "Soft_Landing" option.
+    If the track has broken by falling to the ground at the opening, try to use "Soft_Landing" option.
+    Select the "MainBody" and enable the "Soft Landing" option.
+    The tank will quietly fall down and gently land on the ground.
+
+
+
+Q. "Physics Track" is too loose while running.
+
+A. Adjust the tension of the track.
+    Please read "How to adjust the tension of 'Physics_Track'".
+
+
+
+Q. Can I use other game pad?
+
+A. Modify the "Input Manager".
+    The "Input Manager" in this project is set for 'Xbox 360' controller.
+    When you use other gamepad, you might have to modify your "Input Manager".
+    Please refer to the following 'Wiki'.
+    http://wiki.etc.cmu.edu/unity3d/index.php/Joystick/Controller
+
+
+
+Q. How to increase the tank speed?
+
+A1. Increase the "Torque" and "Maximum Speed" values.
+    Select the "MainBody", and increase the "Torque" and "Maximum Speed" values.
+    When your tank has "Static Track" or "Scroll Track", the tank will get a high speed.
+
+A2. Decrease the "Fixed Timestep" value.
+    When your tank has "Physics Track", it is almost impossible to get more speed only by increasing the torque and the maximum speed values.
+    Because the physics components in the tracks cannot work accurately while running fast in the default physics settings.
+    You need also to adjust the "Fixed Timestep" value in the "Game_Controller" in the scene. Try to change the value to 0.01.
+    The tank will get more speed, however please do not forget that the stress on the processor has much increased.
+
+A3. Increase the "Time Scale" value.
+    The speed of the time passing can be changed in "Game_Controller" in the scene.
+
+A4. Convert the "Physics Track" into "Static Track".
+    When your tank has "Physics Track", try to convert it to "Static Track".
+    Please read "How to convert the 'Physics_Track' into 'Static_Track'.
+
+
+
+Q. How to modify the bullet settings?
+
+A. Modify the bullet settings in "Bullet_Generator".
+    You can modify the bullet settings in "Bullet_Generator" in the tank.
+    Please read "Bullet_Generator".
+
+
+
+Q. How to change the reloading time?
+
+A. Change "Reload Time" value in the "Cannon_Base".
+    You can change the reloading time in "Cannon_Base" in the tank.
+    Please read "Cannon_Base".
+
+
+
+Q. AI tank ignores my new tank.
+
+A. Set the "Upper Offset for AI" and "Lower Offset for AI".
+    The height of your new tank should be different from the tank used as the base.
+    Set the appropriate values into the "Upper Offset for AI" and "Lower Offset for AI" in the "MainBody" of your new tank.
+    Please read "MainBody".
+
+
+
+Please feel free to contact me if you have any questions.
+
+shopmaster@chobi-glass.com
+http://chobi-glass.com/Unity/index.html
